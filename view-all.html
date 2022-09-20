@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Document Title Here</title>
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome css -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- Plugin Css  -->
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select2.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+</head>
+
+<body>
+    <header class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <form action="#" class="header-search">
+                        <input type="text" class="form-control w-100 border-0">
+                    </form>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-area overflow-hidden">
+            <div class="splide hero-carousel" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="hero-carousel-item">
+                                <img src="assets/img/hero-banner-1.png" alt=""
+                                    class="desktop-version w-100 d-none d-md-block">
+                                <img src="assets/img/hero-banner-1-mobile.png" alt=""
+                                    class="mobile-version w-100 d-md-none d-lg-none d-xl-none">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="hero-carousel-item">
+                                <img src="assets/img/hero-banner-1.png" alt=""
+                                    class="desktop-version w-100 d-none d-md-block">
+                                <img src="assets/img/hero-banner-1-mobile.png" alt=""
+                                    class="mobile-version w-100 d-md-none d-lg-none d-xl-none">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="hero-carousel-item">
+                                <img src="assets/img/hero-banner-1.png" alt=""
+                                    class="desktop-version w-100 d-none d-md-block">
+                                <img src="assets/img/hero-banner-1-mobile.png" alt=""
+                                    class="mobile-version w-100 d-md-none d-lg-none d-xl-none">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--./.hero-area -->
+
+        <div class="package-area">
+            <div class="container cs-padding">
+                <h2 class="secondary-title text-center mb-3">Encontre o pacote certo pra você</h2>
+                <div
+                    class="filter-wrapper border_radius_4 d-block d-md-flex align-items-center justify-content-center flex-wrap">
+                    <div
+                        class="filter-type partida position-relative border_radius_4 d-flex align-items-center flex-wrap me-3">
+                        <p class="position-absolute">Local de partida</p>
+                        <select name="" id="departure_place" class="selection">
+                            <option value="Belem" selected>Belem</option>
+                            <option value="Belo Horizonte">Belo Horizonte</option>
+                            <option value="Brasilia">Brasilia</option>
+                            <option value="Curitiba">Curitiba</option>
+                            <option value="Goiania">Goiania</option>
+                            <option value="Manaus">Manaus</option>
+                            <option value="Porto Alegre">Porto Alegre</option>
+                            <option value="Recife">Recife</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Salvador">Salvador</option>
+                            <option value="São Paulo">São Paulo</option>
+                        </select>
+                    </div>
+                    <div
+                        class="filter-type diar position-relative border_radius_4 d-flex align-items-center flex-wrap me-3">
+                        <p class="position-absolute">Quantidade diárias</p>
+                        <select name="" id="number_of_day" class="selection">
+                            <option value="3" selected>3 diárias</option>
+                            <option value="5">5 diárias</option>
+                            <option value="7">7 diárias</option>
+                        </select>
+                    </div>
+                    <div class="filter-type pac position-relative border_radius_4">
+                        <p class="position-absolute">Pacotes</p>
+                        <select name="" id="number_of_package" class="selection">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div> <!-- ./filter-wrapper -->
+
+                <div class="row mb-3" id="all-packages">
+                    <!-- <div class="col-3">
+                        <a href="#" class="package-card d-block">
+                            <div class="package-card-inner">
+                                <div class="package-thumb position-relative">
+                                    <img src="assets/img/place-1.png" alt="" class="img-fluid w-100">
+                                    <span class="badge bg-green position-absolute">Nacional</span>
+                                </div>
+                                <div class="package-content">
+                                    <h4 class="place-name">São Paulo</h4>
+                                    <h3 class="price-blk">
+                                        <span class="from d-block">A partir de</span>
+                                        R$ <span class="pkg-price d-inline-block">529</span>
+                                    </h3>
+
+                                    <ul class="facilites">
+                                        <li><img src="assets/img/airplane.svg" alt="">Voo (ida e volta)</li>
+                                        <li><img src="assets/img/accomodation.svg" alt="">Hospedagem</li>
+                                        <li><img src="assets/img/breakfast.svg" alt="">Café da manhã</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div> <!-- ./package-area -->
+    </main>
+
+    <footer class="footer-area bg-white border-top position-relative">
+        <span class="sq d-inline-block position-absolute start-50 border bg-white border-bottom-0"></span>
+        <div class="container cs-padding">
+            <div class="footer-content">
+                <ul class="ft-menu d-flex align-items-center flex-wrap">
+                    <li><a href="#" class="d-inline-block">Trabalhe conosco</a></li>
+                    <li><a href="#" class="d-inline-block">Termos e condições</a></li>
+                    <li><a href="#" class="d-inline-block">Políticas de privacidade</a></li>
+                    <li><a href="#" class="d-inline-block">Contato</a></li>
+                </ul>
+                <div class="ft-text">
+                    <p>Cursus condimentum auctor scelerisque posuere ac eu volutpat</p>
+                    <p class="mb-0">Massa erat volutpat gravida vel. Proin at mollis fusce sed nulla aliquam nulla.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- All Js here  -->
+
+    <!-- Bootstrap Js (not included popper js)-->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugin Js  -->
+    <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/nice-select2.js"></script>
+
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

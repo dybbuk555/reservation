@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Document Title Here</title>
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Plugin Css  -->
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select2.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+</head>
+
+<body>
+
+    <!-- All Modal Markup Start -->
+    <div class="modal fade" id="hotelList" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog hotel-list">
+            <div class="modal-content">
+                <div class="modal-header position-relative d-block text-center">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Hospede-se em um destes hotéis!</h5>
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="hotels-list" id="hotel-list">
+                        <!-- <li>
+                            <div class="hotel-thumb">
+                                <img src="assets/img/h-2.webp" alt="" class="img-fluid w-100">
+                            </div>
+                            <div class="hotel-list-content">
+                                <h4 class="text-center">Pousada Capitão Thomaz</h4>
+                                <ul class="facilites">
+                                    <li><img src="assets/img/calendar.svg" alt="">3 a 7 diárias</li>
+                                    <li><img src="assets/img/breakfast.svg" alt="">Café da manhã</li>
+                                </ul>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Modal Markup end -->
+
+
+    <header class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <form action="#" class="header-search">
+                        <input type="text" class="form-control w-100 border-0">
+                    </form>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="sku-area">
+            <div class="container cs-padding">
+                <div class="sku-wrapper bg-white border_radius_4">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="product-box" id="package-slider">
+                                <div id="thumbnail-slider" class="splide" aria-label="Splide Basic HTML Example">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <!-- <li class="splide__slide">
+                                            <div class="thumb-slide">
+                                                <img class="img-fluid w-100" src="assets/img/place-1.png" alt="">
+                                            </div>
+                                        </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="main-slider" class="splide" aria-label="Splide Basic HTML Example">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <!-- <li class="splide__slide">
+                                            <div class="thumb-slide">
+                                                <img class="img-fluid w-100" src="assets/img/place-1.png" alt="">
+                                            </div>
+                                        </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="package-content plc-2 border_radius_4">
+                                <h4 class="place-name" id="place-name">Jijoca de Jericoacoara, Ceará </h4>
+                                <h3 class="price-blk">
+                                    <span class="from d-block">Está incluso:</span>
+                                </h3>
+
+                                <ul class="facilites">
+                                    <li><img src="assets/img/airplane.svg" alt="">Voo (ida e volta)</li>
+                                    <li><img src="assets/img/accomodation.svg" alt="">Hospedagem</li>
+                                    <li><img src="assets/img/breakfast.svg" alt="">Café da manhã</li>
+                                </ul>
+
+                                <div class="more-hotels">
+                                    <p>Você ficará hospedado em um dos hotéis da lista</p>
+                                    <button type="button" class="btn box-btn bg-light-blue" data-bs-toggle="modal"
+                                        data-bs-target="#hotelList">Veja aqui a
+                                        lista de hotéis!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="total-wrapper text-center">
+                        <div class="filter-wrapper type-2 p-0">
+                            <div class="filter-type type-2 border-0 h-auto">
+                                <p>Origem</p>
+                                <select name="" id="origin" class="selection">
+                                    <option value="São Paulo" selected>São Paulo</option>
+                                    <option value="Belo Horizonte">Belo Horizonte</option>
+                                    <option value="Brasilia">Brasilia</option>
+                                    <option value="Curitiba">Curitiba</option>
+                                    <option value="Goiania">Goiania</option>
+                                    <option value="Manaus">Manaus</option>
+                                    <option value="Porto Alegre">Porto Alegre</option>
+                                    <option value="Recife">Recife</option>
+                                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                    <option value="Salvador">Salvador</option>
+                                </select>
+                            </div>
+                            <div class="filter-type type-2 border-0 h-auto">
+                                <p>Mês da viagem</p>
+                                <select name="" id="month" class="selection">
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11" selected>November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </div>
+                            <div class="filter-type type-2 border-0 h-auto">
+                                <p>Data de partida</p>
+                                <select name="" id="departure_date" class="selection">
+                                    <option value="Dia 1" selected>Dia 1</option>
+                                    <option value="Dia 2">Dia 2</option>
+                                    <option value="Dia 3">Dia 3</option>
+                                    <option value="Dia 4">Dia 4</option>
+                                    <option value="Dia 5">Dia 5</option>
+                                    <option value="Dia 6">Dia 6</option>
+                                    <option value="Dia 7">Dia 7</option>
+                                    <option value="Dia 8">Dia 8</option>
+                                    <option value="Dia 9">Dia 9</option>
+                                    <option value="Dia 10">Dia 10</option>
+                                    <option value="Dia 11">Dia 11</option>
+                                    <option value="Dia 12">Dia 12</option>
+                                    <option value="Dia 13">Dia 13</option>
+                                    <option value="Dia 14">Dia 14</option>
+                                    <option value="Dia 15">Dia 15</option>
+                                    <option value="Dia 16">Dia 16</option>
+                                    <option value="Dia 17">Dia 17</option>
+                                    <option value="Dia 18">Dia 18</option>
+                                    <option value="Dia 19">Dia 19</option>
+                                    <option value="Dia 20">Dia 20</option>
+                                    <option value="Dia 21">Dia 21</option>
+                                    <option value="Dia 22">Dia 22</option>
+                                    <option value="Dia 23">Dia 23</option>
+                                    <option value="Dia 24">Dia 24</option>
+                                    <option value="Dia 25">Dia 25</option>
+                                    <option value="Dia 26">Dia 26</option>
+                                    <option value="Dia 27">Dia 27</option>
+                                    <option value="Dia 28">Dia 28</option>
+                                    <option value="Dia 29">Dia 29</option>
+                                    <option value="Dia 30">Dia 30</option>
+                                    <option value="Dia 31">Dia 31</option>
+                                </select>
+                            </div>
+                            <div class="filter-type type-2 border-0 h-auto">
+                                <p>Diárias</p>
+                                <select name="" id="number_of_day" class="selection">
+                                    <option value="3" selected>3 diárias</option>
+                                    <option value="5">5 diárias</option>
+                                    <option value="7">7 diárias</option>
+                                </select>
+                            </div>
+                            <div class="filter-type type-2 border-0 h-auto">
+                                <p>Pacotes</p>
+                                <select name="" id="number_of_package" class="selection">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div> <!-- ./filter-wrapper -->
+
+                        <div class="note border_radius_4 mb-4">Preço por pessoa na compra de dois pacotes ou mais.
+                            <strong>Máximo de 4
+                                pessoas por
+                                pedido</strong>
+                        </div>
+                        <div class="total-cost-wrapper d-flex align-items-center justify-content-center">
+                            <h3 class="price-blk type-2 mb-0">
+                                R$ <span class="pkg-price d-inline-block" id="pkg-price">
+                                    <!-- 200  -->
+                                </span>
+                            </h3>
+
+                            <p class="payment-terms-text">Pague em até <span>12x sem juros</span> <br>
+                                com Mercado Pago</p>
+
+                            <a href="confirmation.html" class="btn box-btn continue">Continuar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-area">
+            <div class="container cs-padding">
+                <h1 class="primary-title text-center">Como funciona</h1>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-step text-center">
+                            <img src="assets/img/w-1.png" alt="" class="step-img img-fluid">
+                            <p>Escolha o mês, dia da sua ida e a quantidade de diárias. Lembre-se que você precisa ter
+                                flexibilidade de 24h para antes ou depois dos dias de ida e volta.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="single-step text-center">
+                            <img src="assets/img/w-2.png" alt="" class="step-img img-fluid">
+                            <p>Após a compra, em até 20 dias, enviaremos por e-mail um formulário para preenchimento dos
+                                dados dos passageiros, assim como eventuais observações. Caso não receba o formulário
+                                dentro do prazo de 20 dias após a compra, é de responsabilidade do cliente acionar a
+                                123Milhas para solicitar um novo envio.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="single-step text-center">
+                            <img src="assets/img/w-3.png" alt="" class="step-img img-fluid">
+                            <p>Em até 10 dias antes da sua data escolhida, enviaremos toda documentação com os dados da
+                                sua viagem. Agora é só arrumar as malas e começar a contagem regressiva para diversão!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- ./step-area -->
+
+
+        <div class="about-area">
+            <div class="container cs-padding">
+                <h1 class="primary-title text-center">Sobre</h1>
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-8">
+                        <div class="about-content">
+                            <div class="para">
+                                <p>Passagem aérea de ida e volta para Jericoacoara – Aeroportos de Fortaleza (FOR), em
+                                    classe
+                                    econômica, podendo haver conexão e/ou escala nos trechos.</p>
+                                <p>Para compras efetuadas a partir do dia 10/04/2022 a passagem poderá ser emitida para
+                                    24h
+                                    antes ou depois da data escolhida.</p>
+                            </div>
+
+                            <div class="para">
+                                <div class="para-group">
+                                    <p class="ttl-p">Por exemplo: </p>
+                                    <p>Se você escolheu: ida dia 20, volta dia 25; </p>
+                                </div>
+
+                                <div class="para-group">
+                                    <p class="ttl-p">Podemos emitir: </p>
+                                    <p>Ida dia 19, volta dia 24; ou <br> Ida dia 20, volta dia 25; ou <br>Ida dia 21,
+                                        volta dia
+                                        26;
+                                    </p>
+                                    <p>Para compras efetuadas até 09/04/2022 a passagem poderá ser emitida em uma das
+                                        três datas
+                                        de
+                                        sua escolha, conforme disponibilidade verificada pela 123milhas.</p>
+                                </div>
+                            </div>
+
+                            <div class="para">
+                                <div class="para-group">
+                                    <p class="ttl-p"> Por exemplo:</p>
+                                    <p>Se você escolheu: Ida dia 19, 20 e 21</p>
+                                </div>
+
+                                <div class="para-group">
+                                    <p class="ttl-p">Podemos emitir:</p>
+                                    <p>Ida dia 19, 20 ou 21</p>
+                                    <p>Volta conforme data de emissão da ida e número de diárias do pacote escolhido.
+                                        É imprescindível que você possua essa flexibilidade.</p>
+                                </div>
+                            </div>
+
+                            <div class="para">
+                                <p class="ttl-p">Bagagem</p>
+                                <p>Sua mala de mão deve pesar até 10kg para ser acomodada no bagageiro do avião. Caso
+                                    exceda
+                                    esse
+                                    limite, o envio das bagagens extras deve ser comprado diretamente com a companhia
+                                    aérea.</p>
+                            </div>
+
+                            <div class="para">
+                                <p class="ttl-p">Hospedagem</p>
+                                <p>Nesta oferta, a 123milhas definirá a hospedagem em Jericoacoara, a partir da
+                                    disponibilidade
+                                    e
+                                    tarifário promocional dos parceiros locais.</p>
+                            </div>
+                            <div class="para">
+                                <p> De acordo com a disponibilidade, as pessoas ficarão em quartos duplos ou triplos, em
+                                    hotéis
+                                    de três
+                                    estrelas.</p>
+                            </div>
+                            <div class="para">
+
+                                <p>*Compras realizadas até 02/05/2022 serão reservados hotéis com no mínimo 3 estrelas.
+
+
+                                </p>
+                                <p>*Compras realizadas a partir do dia 03/05/2022 seguem a lista de hotéis
+                                    pré-definidos.</p>
+                                <p></p>
+
+
+                            </div>
+                            <div class="para">
+                                <p class="ttl-p">Observações</p>
+                                <p>As diárias são contabilizadas pelas noites dormidas a partir da sua chegada no
+                                    hotel/pousada;
+                                </p>
+                            </div>
+
+                            <div class="para">
+                                <p>Por ser um pacote promocional, a 123milhas não realiza personalizações como: redução
+                                    do
+                                    número de
+                                    diárias, troca da cidade de origem ou de destino e venda do despacho de bagagens
+                                    extras;</p>
+                            </div>
+
+                            <div class="para">
+                                <p>Este pacote não inclui transfer e passeios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- ./about-area -->
+
+        <div class="faq-area bg-white">
+            <div class="container cs-padding">
+                <h1 class="primary-title text-center">Dúvidas</h1>
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-8">
+                        <div class="accordion" id="faq-accordion">
+                            <div class="accordion-item border-0">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ac-1" aria-expanded="true">
+                                    Taxas
+                                </button>
+                                <div id="ac-1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#faq-accordion">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque eius
+                                            quae,
+                                            repudiandae commodi deleniti distinctio. Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Illo qui consectetur illum repudiandae iure quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ac-2" aria-expanded="true">
+                                    Regras para Criança e Bebê
+                                </button>
+                                <div id="ac-2" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#faq-accordion">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque eius
+                                            quae,
+                                            repudiandae commodi deleniti distinctio. Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Illo qui consectetur illum repudiandae iure quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ac-3" aria-expanded="true">
+                                    Viagem em grupo
+                                </button>
+                                <div id="ac-3" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#faq-accordion">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque eius
+                                            quae,
+                                            repudiandae commodi deleniti distinctio. Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Illo qui consectetur illum repudiandae iure quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ac-4" aria-expanded="true">
+                                    Formas de pagamento
+                                </button>
+                                <div id="ac-4" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#faq-accordion">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque eius
+                                            quae,
+                                            repudiandae commodi deleniti distinctio. Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Illo qui consectetur illum repudiandae iure quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ac-5" aria-expanded="true">
+                                    Validade
+                                </button>
+                                <div id="ac-5" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#faq-accordion">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque eius
+                                            quae,
+                                            repudiandae commodi deleniti distinctio. Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Illo qui consectetur illum repudiandae iure quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ac-6" aria-expanded="true">
+                                    Emissão da sua passagem e hospedagem
+                                </button>
+                                <div id="ac-6" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#faq-accordion">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque eius
+                                            quae,
+                                            repudiandae commodi deleniti distinctio. Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Illo qui consectetur illum repudiandae iure quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ac-7" aria-expanded="true">
+                                    Documentação para viagem
+                                </button>
+                                <div id="ac-7" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#faq-accordion">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque eius
+                                            quae,
+                                            repudiandae commodi deleniti distinctio. Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Illo qui consectetur illum repudiandae iure quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ac-8" aria-expanded="true">
+                                    Cancelamento do pedido
+                                </button>
+                                <div id="ac-8" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#faq-accordion">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque eius
+                                            quae,
+                                            repudiandae commodi deleniti distinctio. Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Illo qui consectetur illum repudiandae iure quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- ./faq-area -->
+
+    </main>
+
+
+
+    <footer class="footer-area bg-white border-top position-relative">
+        <span class="sq d-inline-block position-absolute start-50 border bg-white border-bottom-0"></span>
+        <div class="container cs-padding">
+            <div class="footer-content">
+                <ul class="ft-menu d-flex align-items-center flex-wrap">
+                    <li><a href="#" class="d-inline-block">Trabalhe conosco</a></li>
+                    <li><a href="#" class="d-inline-block">Termos e condições</a></li>
+                    <li><a href="#" class="d-inline-block">Políticas de privacidade</a></li>
+                    <li><a href="#" class="d-inline-block">Contato</a></li>
+                </ul>
+                <div class="ft-text">
+                    <p>Cursus condimentum auctor scelerisque posuere ac eu volutpat</p>
+                    <p class="mb-0">Massa erat volutpat gravida vel. Proin at mollis fusce sed nulla aliquam nulla.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- All Js here  -->
+
+    <!-- Bootstrap Js (not included popper js)-->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugin Js  -->
+    <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/nice-select2.js"></script>
+
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
